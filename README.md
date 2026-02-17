@@ -1,6 +1,8 @@
-# Snake-Game
-This is a web based Snake Game
+## Snake Game
+
 **Daftar Isi**
-1. Panduan Cepat Fungsi dan Fitur(#Panduan Cepat Fungsi dan Fitur.md)
-2. Penjelasan Struktur
-3. Penjelasan Spesifik
+1. [Penjelasan Fungsi dan Fitur](Panduan-Cepat-Semua-Fungsi-&-Fitur-Snake-Game.md)
+2. [Penjelasan Struktur](Penjelasan-Detail-untuk-Desktop,-Tablet-&-Mobile.md)
+3. [Penjelasan Spesifik atau Cara Kerja](Penjelasan-Struktur-dan-Layout.md)
+
+
