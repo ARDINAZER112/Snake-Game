@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>SNAKE GAME</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Waktu:</span>
+                    <span class="value" id="timer">00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-main">
+            <div class="game-left">
+                <div class="game-board">
+                    <canvas id="gameCanvas" width="500" height="500"></canvas>
+                </div>
+                <!-- Mobile Control Buttons -->
+                <div id="mobileControls" class="mobile-controls hidden">
+                    <button class="mobile-btn mobile-btn-up" data-direction="up">▲</button>
+                    <div class="mobile-row">
+                        <button class="mobile-btn mobile-btn-left" data-direction="left">◀</button>
+                        <button class="mobile-btn mobile-btn-down" data-direction="down">▼</button>
+                        <button class="mobile-btn mobile-btn-right" data-direction="right">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-right">
+                <div class="game-controls">
+                    <button id="startBtn" class="btn btn-primary">Mulai Game</button>
+                    <button id="resetBtn" class="btn btn-danger">Reset Game</button>
+                </div>
+
+                <div class="game-info">
+                    <p><strong>Cara Memainkannya:</strong></p>
+                    <ul>
+                        <li><span class="info-desktop">Gunakan <strong>Tombol Panah (↑ ↓ ← →)</strong></span><span class="info-mobile">Gunakan <strong>tombol arah</strong></span> untuk menggerakkan ular</li>
+                        <li>Makan makanan merah untuk memperpanjang ular dan meningkatkan skor</li>
+                        <li>Jangan menabrak dinding atau tubuh sendiri!</li>
+                        <li>Tekan tombol <strong>Mulai Game</strong> untuk memulai permainan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>GAME OVER!</h2>
+                <div class="game-over-stats">
+                    <p>Final Score: <span id="finalScore">0</span></p>
+                    <p>Waktu Bermain: <span id="finalTime">00:00</span></p>
+                </div>
+                <div class="modal-buttons">
+                    <button id="playAgainBtn" class="btn btn-primary">Coba Lagi</button>
+                    <button id="closeModalBtn" class="btn btn-secondary">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
